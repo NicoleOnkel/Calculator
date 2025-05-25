@@ -1,20 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Calculator"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/firstnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Enter your first number"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/secondnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Enter your second number"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/answercard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/addsign"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="+"
+            android:textSize="30sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/subsign"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="-"
+            android:textSize="30sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/divsign"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="30sp"
+            android:layout_margin="5dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/mulsign"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="30sp"
+            android:layout_margin="5dp">
+
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Answer"
+        android:textSize="25sp"
+        android:layout_margin="100dp">
+
+    </Button>
+
+
+
+
+
+</LinearLayout>
