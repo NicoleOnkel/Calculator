@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
 
         var results = 0
-        results = Add(5, 6)
+        results = Add(7, 6)
        tv.text = results.toString()
     }
 }
